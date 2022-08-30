@@ -30,4 +30,4 @@ x <- st_join(x = x1, y = x2, join = st_intersects, largest = T)
 x %>% 
   as_tibble() %>% 
   select(-geometry) %>% 
-  vroom::vroom_write("diccionario_cp_mun_cdmx_y_edomex.txt")
+  vroom::vroom_write("dict_cp_mun_cdmx_y_edomex.txt.txt")
